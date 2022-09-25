@@ -13,7 +13,6 @@ import androidx.compose.material.icons.filled.Search
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.input.ImeAction
@@ -31,7 +30,9 @@ fun ColorPage() {
     var searchInput by remember { mutableStateOf("") }
     var searchValue by remember { mutableStateOf("") }
 
-    Column {
+    Column(
+        modifier = Modifier.fillMaxWidth().fillMaxHeight().background(Color.White)
+    ) {
         Row(
             modifier = Modifier.fillMaxWidth(0.8F).align(Alignment.CenterHorizontally)
         ) {
@@ -83,7 +84,7 @@ fun ColorPage() {
         ) {
 
             Column(
-                modifier = Modifier.fillMaxWidth(0.9F)
+                modifier = Modifier.fillMaxWidth(0.97F)
                     .fillMaxHeight()
                     .align(Alignment.Center)
                     .verticalScroll(rememberScrollState())

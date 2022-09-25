@@ -40,8 +40,8 @@ compose.desktop {
         nativeDistributions {
             targetFormats(TargetFormat.Dmg, TargetFormat.Msi, TargetFormat.Deb)
             packageName = "Color1500"
-            packageVersion = "1.0.0"
-            version = "1.0.0"
+            packageVersion = "1.0.1"
+            version = "1.0.1"
             macOS {
                 // macOS specific options
                 iconFile.set(File("./icon.png"))
